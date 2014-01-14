@@ -1,1 +1,1 @@
-web: bin/hubot -a hipchat -n Jarvis
+web: bin/hubot -a campfire -n Jarvis

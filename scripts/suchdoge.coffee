@@ -16,11 +16,11 @@ url = 'muchdoge.tumblr.com'
 
 module.exports = (robot) ->
 
-  robot.hear /such doge/i, (msg) ->
+  robot.hear /(such doge|very doge|wow)/i, (msg) ->
     tumblr.photos(url).random (post) ->
       msg.send post.photos[0].original_size.url + '#.png'
 
-  robot.hear /many doge( (\d+))?/i, (msg) ->
+  robot.hear /(many doge|doge bomb)( (\d+))?/i, (msg) ->
     i = 0
     count = msg.match[2] || 5
     while i < count

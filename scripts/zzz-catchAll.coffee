@@ -4,6 +4,15 @@ module.exports = (robot) ->
   c = new cleverbot()
 
   robot.respond /(.*)/i, (msg) ->
-    data = msg.match[1]
-    data = data.trim() if data
-    c.write(data, (c) => msg.send(c.message))
+    hasMatch = false
+    for listener in robot.listeners
+      if listener.regex.test robot.name + ' ' + msg.match[1]
+        if listener.regex.toString() == new RegExp(/^[@]?Hubot[:,]?\s*(?:(.*))/i).toString()
+          break
+        hasMatch = true
+        break
+
+    unless hasMatch
+      data = msg.match[1]
+      data = data.trim() if data
+      c.write(data, (c) => msg.send(c.message))

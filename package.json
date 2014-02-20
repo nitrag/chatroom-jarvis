@@ -22,15 +22,14 @@
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.7 < 3.0.0",
-    "hubot-hipchat": "~2.5.1-5",
     "tumblrbot": "latest",
     "scraper": "0.0.9",
     "cheerio": "~0.12.4",
     "optparse": "1.0.3",
     "yelp": "",
     "cleverbot-node": "latest",
-    "tumblrbot": "latest",
-    "node-whois": "latest"
+    "node-whois": "latest",
+    "hubot-slack": "~2.0.1"
   },
   "engines": {
     "node": ">= 0.8.x",

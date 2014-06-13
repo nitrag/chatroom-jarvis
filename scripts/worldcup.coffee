@@ -18,6 +18,7 @@ slack = require('slack-notify')('https://frankbook.slack.com/services/hooks/inco
 matchID = ""
 matchScore = ""
 match = undefined
+prevGameID = undefined
 
 cronJob = cron.job("*/5 * * * * *", ->
 
@@ -31,6 +32,11 @@ cronJob = cron.job("*/5 * * * * *", ->
       match = results[0]
       if typeof match is "object"
 
+        if match.n_HomeGoalsHalftime
+          notify("The score at halftime is: " + match.c_HomeTeam_en + " " + match.c_Score + " " + match.c_AwayTeam_en)
+        if match.n_HomeGoals90mins
+          notify("The score at 90mins is: " + match.c_HomeTeam_en + " " + match.c_Score + " " + match.c_AwayTeam_en)
+
         # Got Live Match!
         unless match.n_MatchID is matchID
 
@@ -39,32 +45,26 @@ cronJob = cron.job("*/5 * * * * *", ->
           matchScore = ""
 
           # Notify New match
-          text = match.c_HomeTeam_es + " vs " + match.c_AwayTeam_es + " is starting now."
-          console.log text
-          slack.send
-            channel: "#general"
-            text: text
-            username: "Jarvis"
+          notify(match.c_HomeTeam_en + " vs " + match.c_AwayTeam_en + " is starting now.")
 
         else unless matchScore is match.c_Score
 
           # Different Score
           matchScore = match.c_Score
-          text = "Scoring update!\n" + match.c_HomeTeam_es + " " + match.c_Score + " " + match.c_AwayTeam_es + " "
-
-          # Notify goal
-          console.log text
-          slack.send
-            channel: "#general"
-            text: text
-            username: "Jarvis"
-
+          notify("Scoring update! " + match.c_HomeTeam_en + " " + match.c_Score + " " + match.c_AwayTeam_en)
       return
 
     return
 
   return
 )
+
+notify = (text) ->
+  slack.send
+    channel: "#general"
+    text: text
+    username: "Jarvis"
+  return
 
 module.exports = (robot) ->
 

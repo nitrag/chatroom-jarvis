@@ -19,6 +19,8 @@ matchID = ""
 matchScore = ""
 match = undefined
 prevGameID = undefined
+notifiedHalf = false
+notifiedNinty = false
 
 cronJob = cron.job("*/5 * * * * *", ->
 
@@ -32,9 +34,11 @@ cronJob = cron.job("*/5 * * * * *", ->
       match = results[0]
       if typeof match is "object"
 
-        if match.n_HomeGoalsHalftime
+        if match.n_HomeGoalsHalftime and not notifiedHalf
+          notifiedHalf = true
           notify("The score at halftime is: " + match.c_HomeTeam_en + " " + match.c_Score + " " + match.c_AwayTeam_en)
-        if match.n_HomeGoals90mins
+        if match.n_HomeGoals90mins and not notifiedNinty
+          notifiedNinty = true
           notify("The score at 90mins is: " + match.c_HomeTeam_en + " " + match.c_Score + " " + match.c_AwayTeam_en)
 
         # Got Live Match!
@@ -43,6 +47,8 @@ cronJob = cron.job("*/5 * * * * *", ->
           # New Match just started
           matchID = match.n_MatchID
           matchScore = ""
+          notifiedHalf = false
+          notifiedNinty = false
 
           # Notify New match
           notify(match.c_HomeTeam_en + " vs " + match.c_AwayTeam_en + " is starting now.")

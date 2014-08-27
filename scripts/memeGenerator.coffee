@@ -197,7 +197,7 @@ memeResponder = (robot, meme) ->
     sendMeme robot, msg, meme.imageUrl, msg.match[2], msg.match[3]
 
 memeify_url = (msg, image_url, top_text, bot_text, callback) ->
-  callback "http://memeifier.com/" + encodeText(top_text) + "/" + encodeText(bot_text) + "/" + image_url
+  callback "http://www.memeifier.com/" + encodeText(top_text) + "/" + encodeText(bot_text) + "/" + image_url
 
 encodeText = (text) ->
   new_text = text.trim().replace(/\s/g, '_')

@@ -185,8 +185,9 @@ sendMeme = (robot, msg, imageUrl, match1, match2) ->
         msg.reply "Ugh, I got an exception trying to contact memeifier.com:", inspect(err)
         return
 
+      # if we have a responseCode that is 400 or above, something went wrong
       responseCode = res.statusCode
-      if responseCode == 200
+      if responseCode < 400
         msg.send url
       else
         msg.reply "Sorry, I could not generate that image."

@@ -20,20 +20,20 @@
     "url": "https://github.com/github/hubot.git"
   },
   "dependencies": {
+    "async": "^0.9.0",
+    "cheerio": "^0.12.4",
+    "cleverbot-node": "latest",
+    "cron": "^1.0.4",
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.7 < 3.0.0",
-    "tumblrbot": "latest",
-    "scraper": "0.0.9",
-    "cheerio": "~0.12.4",
-    "optparse": "1.0.3",
-    "yelp": "",
-    "cleverbot-node": "latest",
+    "hubot-slack": "^2.0.4",
     "node-whois": "latest",
-    "hubot-slack": "~2.0.1",
-    "async": "^0.9.0",
-    "cron": "^1.0.4",
+    "optparse": "^1.0.3",
     "requestify": "^0.1.16",
-    "slack-notify": "^0.1.2"
+    "scraper": "0.0.9",
+    "slack-notify": "^0.1.2",
+    "tumblrbot": "latest",
+    "yelp": ""
   },
   "engines": {
     "node": ">= 0.8.x",

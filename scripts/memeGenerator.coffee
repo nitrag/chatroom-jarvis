@@ -117,11 +117,6 @@ module.exports = (robot) ->
                 help: '<text> Aliens <text>',
                 regex: "(.*)aliens(.*)",
                 imageUrl: 'aliensguy.jpg'
-            },
-            'Zoolander': {
-                help: 'What is this <text> for Ants!?',
-                regex: "(WHAT IS THIS) (.* FOR ANTS!?)",
-                imageUrl: 'http://i.imgur.com/JEjaRuz.jpg'
             }
 
   }

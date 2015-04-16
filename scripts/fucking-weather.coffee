@@ -14,6 +14,8 @@
 # Author:
 #   aaronott
 
+_ = require('underscore')
+
 weather = (msg, query, cb) ->
   monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   msg.http('http://thefuckingweather.com/' + monthNames[new Date().getMonth()] + '/' + query)
@@ -26,5 +28,5 @@ weather = (msg, query, cb) ->
 module.exports = (robot) ->
   robot.respond /(what's|what is) the weather for (.*)/i, (msg) ->
     weather msg, msg.match[2], (topRemark, remark) ->
-      msg.send topRemark
-      msg.send remark
+      msg.send _.unescape(topRemark).replace(/\&#39;/, "'")
+      msg.send _.unescape(remark).replace(/\&#39;/, "'")

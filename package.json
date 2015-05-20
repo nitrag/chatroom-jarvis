@@ -37,7 +37,8 @@
     "soupselect": "^0.2.0",
     "tumblrbot": "latest",
     "underscore": "^1.7.0",
-    "yelp": ""
+    "yelp": "",
+    "hubot-groupme": "~2.0.0"
   },
   "engines": {
     "node": ">= 0.8.x",

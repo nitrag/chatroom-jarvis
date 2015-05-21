@@ -21,7 +21,7 @@ weather = (msg, query, cb) ->
   msg.http('http://thefuckingweather.com/Where/' + query)
     .header('User-Agent', 'Mozilla/5.0')
     .get() (err, res, body) ->
-      topRemark = body.match(/<span class="temperature jsMainTemp" .*>(.*)</)?[1] || "weather not found"
+      topRemark = body.match(/<span class="temperature jsMainTemp" tempf="(.*)">/)?[1] || "weather not found"
       remark = body.match(/<p class="remark jsRemark">(.*)</)?[1] || "remark not found"
       cb(topRemark, remark)
 

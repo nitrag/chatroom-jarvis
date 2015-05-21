@@ -27,7 +27,7 @@
     "cron": "^1.0.4",
     "htmlparser": "^1.7.7",
     "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-groupme": "~2.0.0",
+    "hubot-groupme-v3": "3.0.0",
     "hubot-scripts": ">= 2.5.16 < 3.0.0",
     "hubot-slack": "^3.2.1",
     "hubot-trivia-game": "^1.0.5",

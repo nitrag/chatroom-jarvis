@@ -68,8 +68,9 @@ module.exports = (robot) ->
       cmd.replace /hubot/ig, robot.name
 
     emit = cmds.join "\n"
-
-    msg.send emit
+	
+	//url override
+    msg.send "Go here for HELP: " + @HELP_URL
 
   robot.router.get "/#{robot.name}/help", (req, res) ->
     cmds = robot.helpCommands().map (cmd) ->

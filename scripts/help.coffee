@@ -70,7 +70,7 @@ module.exports = (robot) ->
     emit = cmds.join "\n"
 	
 	#url override
-    msg.send "Go here for HELP: " + @HELP_URL
+    msg.send "Go here for HELP: " + process.env.HELP_URL
 
   robot.router.get "/#{robot.name}/help", (req, res) ->
     cmds = robot.helpCommands().map (cmd) ->

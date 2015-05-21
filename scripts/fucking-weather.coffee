@@ -21,12 +21,13 @@ weather = (msg, query, cb) ->
   msg.http('http://thefuckingweather.com/Where/' + query)
     .header('User-Agent', 'Mozilla/5.0')
     .get() (err, res, body) ->
-      topRemark = body.match(/<span class="temperature jsMainTemp" tempf="(.*)">/)?[1] || "weather not found"
-      remark = body.match(/<p class="remark jsRemark">(.*)</)?[1] || "remark not found"
-      cb(topRemark, remark)
+      temp = body.match(/<span class="temperature" tempf="\d*">(-?\d+)/)?[1] || ""
+      remark = body.match(/<p class="remark">(.*)</)?[1] || "remark not found"
+      flavor = body.match(/<p class="flavor">(.*)</)?[1] || "flavor not found"
+      cb(temp, remark, flavor)
 
 module.exports = (robot) ->
-  robot.respond /(what's|what is) the weather for (.*)/i, (msg) ->
-    weather msg, msg.match[2], (topRemark, remark) ->
-      msg.send _.unescape(topRemark).replace(/\&#39;/, "'")
-      msg.send _.unescape(remark).replace(/\&#39;/, "'")
+  robot.hear /((what's|how's) |(what|how) is )?((the )?(fucking )?weather|(it )?outside)\??/i, (msg) ->
+    weather msg, (temp, remark, flavor) ->
+      out = temp + " degrees " + remark + "\n" + flavor
+      msg.send out

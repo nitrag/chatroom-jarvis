@@ -27,8 +27,10 @@
     "cron": "^1.0.4",
     "htmlparser": "^1.7.7",
     "hubot": ">= 2.6.0 < 3.0.0",
+    "hubot-groupme": "~2.0.0",
     "hubot-scripts": ">= 2.5.16 < 3.0.0",
     "hubot-slack": "^3.2.1",
+    "hubot-trivia-game": "^1.0.5",
     "node-whois": "latest",
     "optparse": "^1.0.3",
     "requestify": "^0.1.16",
@@ -37,8 +39,7 @@
     "soupselect": "^0.2.0",
     "tumblrbot": "latest",
     "underscore": "^1.7.0",
-    "yelp": "",
-    "hubot-groupme": "~2.0.0"
+    "yelp": ""
   },
   "engines": {
     "node": ">= 0.8.x",

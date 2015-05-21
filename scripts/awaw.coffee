@@ -24,4 +24,4 @@ tags = [
 
 module.exports = (robot) ->
    robot.hear /awaw/i, (msg)->
-      msg.send msg.random tag
+      msg.send msg.random tags

@@ -1,4 +1,4 @@
-cription:
+# Description:
 #   None
 #
 # Dependencies:

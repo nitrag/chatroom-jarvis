@@ -18,11 +18,11 @@ _ = require('underscore')
 
 weather = (msg, query, cb) ->
   monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-  msg.http('http://thefuckingweather.com/' + monthNames[new Date().getMonth()] + '/' + query)
+  msg.http('http://thefuckingweather.com/Where/' + query)
     .header('User-Agent', 'Mozilla/5.0')
     .get() (err, res, body) ->
-      topRemark = body.match(/<h1 class="topRemark">(.*)</)?[1] || "weather not found"
-      remark = body.match(/<h2 class="remark">(.*)</)?[1] || "remark not found"
+      topRemark = body.match(/<span class="temperature jsMainTemp">(.*)</)?[1] || "weather not found"
+      remark = body.match(/<p class="remark jsRemark">(.*)</)?[1] || "remark not found"
       cb(topRemark, remark)
 
 module.exports = (robot) ->

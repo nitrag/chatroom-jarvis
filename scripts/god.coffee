@@ -15,11 +15,7 @@
 
 module.exports = (robot) ->
   robot.hear /(am i|whos|who's|who is) (.* )?god/i, (msg)->
-    name   = msg.match[1]
-    users = robot.brain.usersForFuzzyName(name)
-    sender = "Unknown"
-    if users.length is 1
-      sender = users[0].name
+    sender   = msg.message.user.name
     deal = [
        "My sincerest apologies " + sender + ", it is without a doubt NOT you!",
        "Heh, go away peasant!",

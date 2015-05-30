@@ -122,11 +122,11 @@ module.exports = (robot) ->
   robot.hear /(LOL|ROFL)/, (msg)->
     msg.send msg.random lol
 	
-  robot.hear /(fucked up)/i, (msg)->
+  robot.hear /fucked up/i, (msg)->
     msg.send msg.random fuckedup
 
   robot.hear /sluts/i, (msg)->
     msg.send msg.random sluts
 	
-  robot.hear /(titties|tittays|bewbs|boobs|boobies|breast)/i, (msg)->
+  robot.hear /(titties|tittays|bewbs|boobs|boobies|breast|tits)/i, (msg)->
     msg.send msg.random titties

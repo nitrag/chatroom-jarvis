@@ -29,16 +29,16 @@ omg = [
 ]
 
 nailed = [
-  "NAILED IT! https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/huge-dive.gif",
-  "NAILED IT! https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-phone-dunk.gif",
-  "NAILED IT! https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-bowling-pins.gif",
+  "https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/huge-dive.gif",
+  "https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-phone-dunk.gif",
+  "https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-bowling-pins.gif",
   "https://github.com/jglovier/gifs/blob/gh-pages/high-five/high-five-knailed-it.gif?raw=true",
-  "NAILED IT! https://media4.giphy.com/media/5AC7KaNyKgNbO/200.gif"
+  "https://media4.giphy.com/media/5AC7KaNyKgNbO/200.gif"
 ]
 
 burn = [
   "https://github.com/jglovier/gifs/blob/gh-pages/burn/ashton-kutcher-burn.gif",
-  "BURN! https://github.com/jglovier/gifs/blob/gh-pages/burn/fight-club-burn-it-down.gif",
+  "https://github.com/jglovier/gifs/blob/gh-pages/burn/fight-club-burn-it-down.gif",
   "https://github.com/jglovier/gifs/blob/gh-pages/burn/hashtag-burn-neil-patrick-harris.gif"
 ]
 
@@ -55,9 +55,9 @@ interesting = [
 ]
 
 azam = [
-  "Yes? http://i.imgur.com/zbrPy.jpg",
-  "huh? http://i.imgur.com/nHLpe.gif",
-  "huh?! http://i.imgur.com/e0kab.jpg",
+  "http://i.imgur.com/zbrPy.jpg",
+  "http://i.imgur.com/nHLpe.gif",
+  "http://i.imgur.com/e0kab.jpg",
   "http://i.imgur.com/vFb3C.jpg",
   "http://makeameme.org/media/created/did-someone-say-hgebwr.jpg"
 ]
@@ -93,9 +93,7 @@ module.exports = (robot) ->
     msg.send msg.random omg
 	
   robot.hear /nailed it/i, (msg)->
-    console.log "Who said nailed it: " + msg.message.user.name.toLowerCase()
-    if msg.message.user.name.toLowerCase() != "jarvis"
-      msg.send msg.random nailed
+    msg.send msg.random nailed
 
   robot.hear /(burned|burn!)/i, (msg)->
     msg.send msg.random burn

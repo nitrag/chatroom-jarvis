@@ -32,6 +32,7 @@
     "hubot-scripts": ">= 2.5.16 < 3.0.0",
     "hubot-slack": "^3.2.1",
     "hubot-trivia-game": "^1.0.5",
+    "hubot-wolfram": "^1.0.7",
     "node-whois": "latest",
     "optparse": "^1.0.3",
     "requestify": "^0.1.16",

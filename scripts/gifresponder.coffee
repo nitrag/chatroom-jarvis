@@ -33,7 +33,7 @@ nailed = [
   "NAILED IT! https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-phone-dunk.gif",
   "NAILED IT! https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-bowling-pins.gif",
   "https://github.com/jglovier/gifs/blob/gh-pages/high-five/high-five-knailed-it.gif?raw=true",
-  NAILED IT! https://media4.giphy.com/media/5AC7KaNyKgNbO/200.gif"
+  "NAILED IT! https://media4.giphy.com/media/5AC7KaNyKgNbO/200.gif"
 ]
 
 burn = [
@@ -117,7 +117,7 @@ module.exports = (robot) ->
 	
 module.exports = (robot) ->
   robot.hear /don't you do that/i, (msg)->
-    msg.send https://media2.giphy.com/media/eCzu4k0KEStDa/200.gif
+    msg.send "https://media2.giphy.com/media/eCzu4k0KEStDa/200.gif"
 	
 module.exports = (robot) ->
   robot.hear /(LOL|ROFL)/, (msg)->

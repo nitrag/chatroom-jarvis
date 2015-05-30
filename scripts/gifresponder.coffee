@@ -86,7 +86,7 @@ titties = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /(thumbs up|\xF0\x9F\x91\x8D)/i, (msg)->
+  robot.hear /(thumbs up|\xF0\x9F\x91\x8D|ğ)/i, (msg)->
     msg.send msg.random thumb
 	
   robot.hear /omg/i, (msg)->
@@ -112,3 +112,9 @@ module.exports = (robot) ->
 	
   robot.hear /(LOL|ROFL)/, (msg)->
     msg.send msg.random lol
+	
+  robot.hear /(fucked up)/, (msg)->
+    msg.send msg.random fuckedup
+	
+  robot.hear /(titties|tittays|bewbs|boobs|boobies|breast)/, (msg)->
+    msg.send msg.random titties

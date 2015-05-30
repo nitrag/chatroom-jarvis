@@ -27,6 +27,7 @@
     "cron": "^1.0.4",
     "htmlparser": "^1.7.7",
     "hubot": ">= 2.6.0 < 3.0.0",
+    "hubot-baseball": "^1.0.1",
     "hubot-groupme": "latest",
     "hubot-scripts": ">= 2.5.16 < 3.0.0",
     "hubot-slack": "^3.2.1",

@@ -89,36 +89,28 @@ module.exports = (robot) ->
   robot.hear /(thumbs up|\xF0\x9F\x91\x8D)/i, (msg)->
     msg.send msg.random thumb
 	
-module.exports = (robot) ->
   robot.hear /omg/i, (msg)->
     msg.send msg.random omg
 	
-module.exports = (robot) ->
   robot.hear /nailed it/i, (msg)->
     console.log "Who said nailed it: " + msg.message.user.name.toLowerCase()
     if msg.message.user.name.toLowerCase() != "jarvis"
       msg.send msg.random nailed
 
-module.exports = (robot) ->
   robot.hear /(burned|burn!)/i, (msg)->
     msg.send msg.random burn
 
-module.exports = (robot) ->
   robot.hear /BOOM/i, (msg)->
     msg.send msg.random boom
 
-module.exports = (robot) ->
   robot.hear /azam/i, (msg)->
     msg.send msg.random azam
 
-module.exports = (robot) ->
   robot.hear /interesting.../i, (msg)->
     msg.send msg.random interesting
 	
-module.exports = (robot) ->
   robot.hear /don't you do that/i, (msg)->
     msg.send "https://media2.giphy.com/media/eCzu4k0KEStDa/200.gif"
 	
-module.exports = (robot) ->
   robot.hear /(LOL|ROFL)/, (msg)->
     msg.send msg.random lol

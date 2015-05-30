@@ -15,31 +15,31 @@
 #   gif's courtesy of jglovier
 
 thumb = [
-  "https://github.com/jglovier/gifs/blob/gh-pages/thumbs-up/chuck-norris.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/thumbs-up/jakie-chan-thumbsup.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/thumbs-up/terminator.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/thumbs-up/thumbs-up.gif"
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/thumbs-up/chuck-norris.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/thumbs-up/jakie-chan-thumbsup.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/thumbs-up/terminator.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/thumbs-up/thumbs-up.gif"
 ]
 
 omg = [
-  "https://github.com/jglovier/gifs/blob/gh-pages/omg/Kramer-whaaa.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/omg/austin-powers-omg.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/omg/omg.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/omg/fresh-prince-omg.gif"
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/Kramer-whaaa.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/austin-powers-omg.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/omg.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/fresh-prince-omg.gif"
 ]
 
 nailed = [
-  "https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/huge-dive.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-phone-dunk.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/nailed-it/nailed-it-bowling-pins.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/high-five/high-five-knailed-it.gif?raw=true",
-  "https://media4.giphy.com/media/5AC7KaNyKgNbO/200.gif"
+  "NAILED IT! https://raw.githubusercontent.com/jglovier/gifs/gh-pages/nailed-it/huge-dive.gif",
+  "NAILED IT! https://raw.githubusercontent.com/jglovier/gifs/gh-pages/nailed-it/nailed-it-phone-dunk.gif",
+  "NAILED IT! https://raw.githubusercontent.com/jglovier/gifs/gh-pages/nailed-it/nailed-it-bowling-pins.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/high-five/high-five-knailed-it.gif?raw=true",
+  "NAILED IT! https://media4.giphy.com/media/5AC7KaNyKgNbO/200.gif"
 ]
 
 burn = [
-  "https://github.com/jglovier/gifs/blob/gh-pages/burn/ashton-kutcher-burn.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/burn/fight-club-burn-it-down.gif",
-  "https://github.com/jglovier/gifs/blob/gh-pages/burn/hashtag-burn-neil-patrick-harris.gif"
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/burn/ashton-kutcher-burn.gif",
+  "BURN! https://raw.githubusercontent.com/jglovier/gifs/gh-pages/burn/fight-club-burn-it-down.gif",
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/burn/hashtag-burn-neil-patrick-harris.gif"
 ]
 
 badass = [
@@ -55,9 +55,9 @@ interesting = [
 ]
 
 azam = [
-  "http://i.imgur.com/zbrPy.jpg",
-  "http://i.imgur.com/nHLpe.gif",
-  "http://i.imgur.com/e0kab.jpg",
+  "Yes? http://i.imgur.com/zbrPy.jpg",
+  "huh? http://i.imgur.com/nHLpe.gif",
+  "huh?! http://i.imgur.com/e0kab.jpg",
   "http://i.imgur.com/vFb3C.jpg",
   "http://makeameme.org/media/created/did-someone-say-hgebwr.jpg"
 ]

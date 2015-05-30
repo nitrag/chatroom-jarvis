@@ -85,6 +85,15 @@ titties = [
   "http://i.imgur.com/spPpObF.gif"
 ]
 
+sluts = [
+  "http://i.imgur.com/VIAf8Z7.jpg",
+  "http://www.quickmeme.com/img/72/722b5986a7508ed2b45f836e32b04f42a71f7787c5be320808cb04f94d890a5c.jpg",
+  "http://static.fjcdn.com/pictures/Halloween_8b4705_150984.jpg",
+  "http://www.stopmesh.com/wp-content/uploads/2014/10/sluts.jpg",
+  "http://i.imgur.com/ho7UR5E.jpg",
+  "sluts... 'Murica!"
+]
+
 module.exports = (robot) ->
   robot.hear /(thumbs up|\xF0\x9F\x91\x8D|👍)/i, (msg)->
     msg.send msg.random thumb
@@ -113,8 +122,11 @@ module.exports = (robot) ->
   robot.hear /(LOL|ROFL)/, (msg)->
     msg.send msg.random lol
 	
-  robot.hear /(fucked up)/, (msg)->
+  robot.hear /(fucked up)/i, (msg)->
     msg.send msg.random fuckedup
+
+  robot.hear /sluts/i, (msg)->
+    msg.send msg.random sluts
 	
-  robot.hear /(titties|tittays|bewbs|boobs|boobies|breast)/, (msg)->
+  robot.hear /(titties|tittays|bewbs|boobs|boobies|breast)/i, (msg)->
     msg.send msg.random titties

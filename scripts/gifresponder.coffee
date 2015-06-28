@@ -80,15 +80,6 @@ lol = [
   "https://media4.giphy.com/media/r1wGrCEZ4zTeU/200.gif"
 ]
 
-titties = [
-  "http://i.imgur.com/06GEkxm.webm"
-  "http://i.imgur.com/MTJtk7N.gif",
-  "http://i.imgur.com/R9FaKUe.gif",
-  "http://i.imgur.com/uk0lxoT.webm",
-  "http://i.imgur.com/Q6oIKzV.gif",
-  "http://i.imgur.com/spPpObF.gif"
-]
-
 sluts = [
   "http://i.imgur.com/VIAf8Z7.jpg",
   "http://www.quickmeme.com/img/72/722b5986a7508ed2b45f836e32b04f42a71f7787c5be320808cb04f94d890a5c.jpg",
@@ -131,6 +122,4 @@ module.exports = (robot) ->
 
   robot.hear /sluts/i, (msg)->
     msg.send msg.random sluts
-	
-  robot.hear /(titties|tittays|bewbs|boobs|boobies|breast|tits)/i, (msg)->
-    msg.send msg.random titties
+

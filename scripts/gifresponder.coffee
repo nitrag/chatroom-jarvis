@@ -59,7 +59,11 @@ azam = [
   "http://i.imgur.com/nHLpe.gif",
   "http://i.imgur.com/e0kab.jpg",
   "http://i.imgur.com/vFb3C.jpg",
-  "http://makeameme.org/media/created/did-someone-say-hgebwr.jpg"
+  "http://makeameme.org/media/created/did-someone-say-hgebwr.jpg",
+  "http://i.imgur.com/Ov7YDST.gif",
+  "http://i.imgur.com/PvGb4At.gif",
+  "http://www.textgiraffe.com/custom-design/t-shirt/Azam-designstyle-i-love-a.png",
+  "http://i.imgur.com/wAptEGB.jpg"
 ]
 
 fuckedup = [

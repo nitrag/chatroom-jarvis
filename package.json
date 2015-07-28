@@ -9,7 +9,7 @@
     "bot"
   ],
   "description": "A simple helpful robot for your Company",
-  "license" : "MIT" },
+  "license" : "MIT",
   "licenses": [
     {
       "type": "MIT",

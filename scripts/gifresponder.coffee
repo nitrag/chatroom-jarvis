@@ -25,7 +25,8 @@ omg = [
   "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/Kramer-whaaa.gif",
   "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/austin-powers-omg.gif",
   "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/omg.gif",
-  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/fresh-prince-omg.gif"
+  "https://raw.githubusercontent.com/jglovier/gifs/gh-pages/omg/fresh-prince-omg.gif",
+  "https://fabulousvonraptor.files.wordpress.com/2015/03/fabulous-von-raptor-nerd-swag.gif"
 ]
 
 nailed = [
@@ -83,6 +84,12 @@ sluts = [
   "sluts... 'Murica!"
 ]
 
+fabulous = [
+  "#fabulous http://i.imgur.com/3PVkOjh.gif",
+  "#fabulous http://stream1.gifsoup.com/view2/4648492/fabulous-o.gif",
+  "#fabulous http://vignette2.wikia.nocookie.net/glee/images/a/a6/Talla_fabulous.gif/revision/latest?cb=20130302165945"
+]
+
 module.exports = (robot) ->
   robot.hear /(thumbs up|\xF0\x9F\x91\x8D|👍)/i, (msg)->
     msg.send msg.random thumb
@@ -117,3 +124,5 @@ module.exports = (robot) ->
   robot.hear /sluts/i, (msg)->
     msg.send msg.random sluts
 
+  robot.hear /(lov|gay|engaged|fabulous)/i (msg)->
+    msg.send msg.random fabulous
